@@ -4,24 +4,38 @@ gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+# gem 'journey',   :git => 'git://github.com/rails/journey.git', :branch => '1-0-stable'
 
-gem 'sqlite3'
+gem 'pg'
+
+gem 'omniauth-browserid'
+gem 'omniauth-twitter'
+
+gem 'strong_parameters'
 
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 3.2'
+  gem 'coffee-rails', '~> 3.2'
   gem 'compass-rails'
-  gem 'zurb-foundation'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'bourbon'
+  gem 'neat'
+  gem 'uglifier'
 end
 
 gem 'jquery-rails'
 
 group :test, :development do
   gem 'minitest-rails'   
+  gem 'autotest-rails'
+  gem 'autotest-growl'
+  gem 'spork-minitest'
+  gem 'ruby-prof'
+  gem 'capybara'
+  gem 'capybara_minitest_spec'
+  gem 'poltergeist'
 end
 
 # To use ActiveModel has_secure_password

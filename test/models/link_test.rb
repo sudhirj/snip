@@ -1,6 +1,6 @@
 require "test_helper"
 
-class HomeControllerTest < MiniTest::Rails::ActionController::TestCase
+class LinkTest < MiniTest::Rails::ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

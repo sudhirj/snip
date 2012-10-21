@@ -1,3 +1,46 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  h1{
+    color: $primaryColor;
+
+  }
+}
+
+.options {  
+  @include row;
+  margin: 1.618rem 0;
+  section {
+    @include border-top-left-radius(0.618rem);
+    border: thin solid #efefef;
+    padding: 1rem;
+    h2 {
+      margin-top: 0;
+    }
+    p {      
+      margin-bottom: 2.618rem;
+    }
+    @include span-columns(5 of 10);
+    @include breakpoint($small) {
+      @include span-columns(1 of 1);
+      margin-bottom: 1.618rem;
+    }
+    position: relative;
+    .login {
+      display: block;
+      font-weight: 500;
+      @include border-top-left-radius(0.381rem);
+      padding: 0.145rem 0.618rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-transform: lowercase;
+      color: white;
+      background: $primaryColor;
+    }
+
+  }
+}
+
+footer {
+  opacity: 0.8;
+}
